@@ -50,6 +50,10 @@ Driver class is a mediator class between a java application and a database
 
 ###### Draw Backs of JDBC
 
+- 	for enterprice application jdbc is not suitable,because jdbc query are database centric query 
+  	in future if we want to move one database to another database we have to change that query style.
+  	so in jdbc ,sql operation are database centric operation so even java is platform indipendant 
+	but if you write java DAO class by using jdbc then ur class will become database dependant
 -	In JDBC, if we open a database connection we need to write in try, and 
 	if any exceptions occurred catch block will take care about it, and finally used to close the connections.
 -	here as a programmer we must close the connection, or we may get a chance to get our of connections message…!
