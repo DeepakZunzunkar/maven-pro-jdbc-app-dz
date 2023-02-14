@@ -56,7 +56,7 @@ Driver class is a mediator class between a java application and a database
 	but if you write java DAO class by using jdbc then ur class will become database dependant
 -	In JDBC, if we open a database connection we need to write in try, and 
 	if any exceptions occurred catch block will take care about it, and finally used to close the connections.
--	here as a programmer we must close the connection, or we may get a chance to get our of connections message…!
+-	here as a programmer we must close the connection, or we may get a chance to get out of connections message…!
 -	Actually if we didn’t close the connection in the finally block, then jdbc doesn’t responsible to close that connection.
 -	In JDBC we need to write Sql commands in various places, after the program has created if the table structure is modified 
 	then the JDBC program doesn’t work, again we need to modify and compile and re-deploy required, which is tedious.
@@ -64,4 +64,9 @@ Driver class is a mediator class between a java application and a database
 -	In the Enterprise applications, the data flow with in an application from class to class will be in the form of objects,
 	but while storing data finally in a database using JDBC then that object will be converted into text.  
 	Because JDBC doesn’t transfer objects directly.
+-	here Whateever data we get in Object that we have to map mannualy with the table column in query and we can not directly save object in database and if object 	       is too complex then ,it is tidious job to do mapping mannualy .
+
 >In order to overcome above problems,  Hibernate came into picture..!
+-	In Hibernate , we don't need to do mapping of Object while saving the Object hibernate will do it internally for us and we just need to pass object even if it 	       is too complex object hibernate map it corretly .
+-	there are lots of futures in hibernate , here it treat java class as Table and class Object as record and also track Object state and synk with table data .
+	it basically try to reduce repeateting code and as compared to JDBC hibernate is faster .
